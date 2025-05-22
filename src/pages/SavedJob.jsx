@@ -2,7 +2,7 @@
 
 import { getSavedJobs } from "@/api/apiJobs";
 import JobCard from "@/components/JobCard";
-import useFetch from "@/hooks/Usefetch";
+import Usefetch from "@/hooks/Usefetch";
 import { useUser } from "@clerk/clerk-react";
 import { useEffect } from "react";
 import { BarLoader } from "react-spinners";
@@ -14,7 +14,7 @@ const SavedJobs = () => {
     loading: loadingSavedJobs,
     data: savedJobs,
     fn: fnSavedJobs,
-  } = useFetch(getSavedJobs);
+  } = Usefetch(getSavedJobs);
 
   useEffect(() => {
     if (isLoaded) {

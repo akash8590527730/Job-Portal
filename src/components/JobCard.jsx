@@ -9,7 +9,7 @@ import {
   CardTitle,
 } from "./ui/card";
 import { Link } from "react-router-dom";
-import useFetch from "@/hooks/Usefetch";
+import Usefetch from "@/hooks/Usefetch";
 import { deleteJob, saveJob } from "@/api/apiJobs";
 import { useUser } from "@clerk/clerk-react";
 import { useEffect, useState } from "react";
@@ -25,7 +25,7 @@ const JobCard = ({
 
   const { user } = useUser();
 
-  const { loading: loadingDeleteJob, fn: fnDeleteJob } = useFetch(deleteJob, {
+  const { loading: loadingDeleteJob, fn: fnDeleteJob } = Usefetch(deleteJob, {
     job_id: job.id,
   });
 
@@ -33,7 +33,7 @@ const JobCard = ({
     loading: loadingSavedJob,
     data: savedJob,
     fn: fnSavedJob,
-  } = useFetch(saveJob);
+  } = Usefetch(saveJob);
 
   const handleSaveJob = async () => {
     await fnSavedJob({

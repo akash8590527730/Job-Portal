@@ -12,7 +12,7 @@ import { Input } from "./ui/input";
 import { z } from "zod";
 import { zodResolver } from "@hookform/resolvers/zod";
 import { useForm } from "react-hook-form";
-import useFetch from "@/hooks/Usefetch";
+import Usefetch from "@/hooks/Usefetch";
 import { addNewCompany } from "@/api/apiCompanies";
 import { BarLoader } from "react-spinners";
 import { useEffect } from "react";
@@ -45,7 +45,7 @@ const AddCompanyDrawer = ({ fetchCompanies }) => {
     error: errorAddCompany,
     data: dataAddCompany,
     fn: fnAddCompany,
-  } = useFetch(addNewCompany);
+  } = Usefetch(addNewCompany);
 
   const onSubmit = async (data) => {
     fnAddCompany({

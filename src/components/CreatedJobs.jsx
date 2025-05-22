@@ -1,5 +1,5 @@
 import { getMyJobs } from "@/api/apiJobs";
-import useFetch from "@/hooks/Usefetch";
+import Usefetch from "@/hooks/Usefetch";
 import { useUser } from "@clerk/clerk-react";
 import { BarLoader } from "react-spinners";
 import JobCard from "./JobCard";
@@ -12,7 +12,7 @@ const CreatedJobs = () => {
     loading: loadingCreatedJobs,
     data: createdJobs,
     fn: fnCreatedJobs,
-  } = useFetch(getMyJobs, {
+  } = Usefetch(getMyJobs, {
     recruiter_id: user.id,
   });
 

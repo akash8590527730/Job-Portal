@@ -13,7 +13,7 @@ import { Button } from './ui/button'
 import { z } from 'zod'
 import { useForm } from 'react-hook-form'
 import { zodResolver } from '@hookform/resolvers/zod'
-import useFetch from '@/hooks/Usefetch'
+import Usefetch from '@/hooks/Usefetch'
 import { applyToJob } from '@/api/apiApplications'
 import { BarLoader } from 'react-spinners'
 import { Input } from '@/components/ui/input'
@@ -55,7 +55,7 @@ const ApplyJobDrawer = ({ user, job, applied = false, fetchJob }) => {
     loading: loadingApply,
     error: errorApply,
     fn: fnApply
-  } = useFetch(applyToJob)
+  } = Usefetch(applyToJob)
 
   const onSubmit = (data) => {
     fnApply({

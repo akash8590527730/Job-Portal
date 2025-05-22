@@ -1,7 +1,7 @@
 import { getSingleJob, updateHiringStatus } from '@/api/apiJobs'
 import ApplicationCard from '@/components/ApplicationCard'
 import ApplyJobDrawer from '@/components/ApplyJobDrawer'
-import useFetch from '@/hooks/Usefetch'
+import Usefetch from '@/hooks/Usefetch'
 import { useUser } from '@clerk/clerk-react'
 import {
   Select,
@@ -29,7 +29,7 @@ const Job = () => {
     loading: loadingJob,
     data: job,
     fn: fnJob,
-  } = useFetch(getSingleJob, {
+  } = Usefetch(getSingleJob, {
     job_id: id,
   })
 
@@ -37,7 +37,7 @@ const Job = () => {
     if (isLoaded) fnJob()
   }, [isLoaded])
 
-  const { loading: loadingHiringStatus, fn: fnHiringStatus } = useFetch(
+  const { loading: loadingHiringStatus, fn: fnHiringStatus } = Usefetch(
     updateHiringStatus,
     {
       job_id: id,

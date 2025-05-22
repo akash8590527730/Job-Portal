@@ -15,7 +15,7 @@ import {
   SelectValue,
 } from "./ui/select";
 import { updateApplicationStatus } from "@/api/apiApplications";
-import useFetch from "@/hooks/Usefetch";
+import Usefetch from "@/hooks/Usefetch";
 import { BarLoader } from "react-spinners";
 
 
@@ -27,7 +27,7 @@ const ApplicationCard = ({ application, isCandidate = false }) => {
     link.click();
   };
 
-  const { loading: loadingHiringStatus, fn: fnHiringStatus } = useFetch(
+  const { loading: loadingHiringStatus, fn: fnHiringStatus } = Usefetch(
     updateApplicationStatus,
     {
       job_id: application.job_id,
