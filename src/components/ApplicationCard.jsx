@@ -15,7 +15,7 @@ import {
   SelectValue,
 } from "./ui/select";
 import { updateApplicationStatus } from "@/api/apiApplications";
-import useFetch from "@/hooks/UseFetch";
+import useFetch from "@/hooks/Usefetch";
 import { BarLoader } from "react-spinners";
 
 
