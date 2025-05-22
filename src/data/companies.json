@@ -1,0 +1,41 @@
+[
+ 
+  {
+    "name": "google",
+    "path": "/companies/google.webp",
+    "id": 2
+  },
+  {
+    "name": "ibm",
+    "path": "/companies/ibm.svg",
+    "id": 3
+  },
+  {
+    "name": "infosys",
+    "path": "/companies/images2.png",
+    "id": 6
+  },
+    {
+    "name": "luminar",
+    "path": "/companies/luminar.png",
+    "id": 7
+  },
+  {
+    "name": "meta",
+    "path": "/companies/meta.svg",
+    "id": 4
+  },
+  {
+    "name": "microsoft",
+    "path": "/companies/microsoft.webp",
+    "id": 5
+  },
+  
+
+  
+   {
+    "name": "amazon",
+    "path": "/companies/amazon.svg",
+    "id": 1
+  }
+]

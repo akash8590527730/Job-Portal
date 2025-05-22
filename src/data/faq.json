@@ -1,0 +1,30 @@
+[
+  {
+    "question": "What is NextGenRecruit?",
+    "answer": "NextGenRecruit is a comprehensive job portal designed to connect job seekers with potential employers. It offers a user-friendly interface, allowing users to search for job listings, apply directly, and manage their job applications efficiently."
+  },
+  {
+    "question": "How can I search for jobs on NextGenRecruit?",
+    "answer": "After logging into your NextGenRecruit account, navigate to the 'Job Search' section. Here, you can use filters such as keywords, location, industry, and job type to find listings that match your preferences."
+  },
+  {
+    "question": "How do I apply for a job?",
+    "answer": "Click on a job listing to view its details. If the position interests you, click the 'Apply Now' button. You'll be prompted to upload your resume and, if required, a cover letter. Ensure your profile is complete to increase your chances."
+  },
+  {
+    "question": "Can I save jobs to view or apply later?",
+    "answer": "Yes, you can. On each job listing, there's a 'Save Job' option. Click it to add the job to your 'Saved Jobs' list, which you can access anytime from your profile dashboard."
+  },
+  {
+    "question": "How do I track my job applications?",
+    "answer": "Within your profile, there's an 'Applications' section. Here, you can view all the jobs you've applied for, along with their current status—such as 'Under Review', 'Interview Scheduled', or 'Closed'."
+  },
+  {
+    "question": "Is it possible to receive job alerts?",
+    "answer": "Absolutely! You can set up personalized job alerts based on your preferred criteria. NextGenRecruit will then notify you via email or in-app notifications when new jobs matching your preferences are posted."
+  },
+  {
+    "question": "How can I improve my chances of getting hired?",
+    "answer": "Ensure your profile is complete and up-to-date, including a detailed resume and a compelling summary. Regularly check for new job postings, apply promptly, and consider tailoring your application materials to each job."
+  }
+]
